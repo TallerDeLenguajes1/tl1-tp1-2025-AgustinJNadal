@@ -10,5 +10,6 @@ int main() {
     printf("Direccion de memoria del puntero: %p\n", &puntero);
     printf("Tamanio de memoria utilizado por la variable: %d bytes\n", sizeof(s));
 
+    
     return 0;
 }
