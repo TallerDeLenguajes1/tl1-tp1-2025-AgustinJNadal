@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    printf("Hola Mundo");
+    int s = 12;
+    int *puntero = &s;
     
     return 0;
 }
