@@ -3,6 +3,7 @@
 void cuadradoNum(int num);
 void direcContenido(int *num);
 void invertir(int *num, int *num2);
+void ordenados(int *num, int *num2);
 
 int main() {
     int num;
@@ -16,6 +17,7 @@ int main() {
     cuadradoNum(num);
     direcContenido(&num);
     invertir(&num, &num2);
+    ordenados(&num, &num2);
 
     return 0;
 }
@@ -23,7 +25,7 @@ int main() {
 void cuadradoNum(int num){
     int cuadrado;
     cuadrado = num * num;
-    printf("\nEl cuadrado de num es: %d\n", num, cuadrado);
+    printf("\nEl cuadrado de num es: %d\n", cuadrado);
 }
 
 void direcContenido(int *num) {
@@ -37,4 +39,15 @@ void invertir(int *num, int *num2){
     *num = *num2;
     *num2 = vaux;
     printf("\nValores invertidos: num = %d y num2 = %d", *num, *num2);
+}
+
+void ordenados(int *num, int *num2){
+    if (*num > *num2)
+    {
+        int vaux;
+        vaux = *num;
+        *num = *num2;
+        *num2 = vaux;
+    }
+    printf("\nValores ordenados: num (menor)= %d y num2 (mayor)= %d", *num, *num2);
 }
