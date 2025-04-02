@@ -14,7 +14,7 @@ int main() {
     scanf("%d", &pares);
     
     for (int i = 0; i < pares; i++) {
-        int par;
+        int par; 
         par = i + 1;
         printf("\nPar %d\n", par);
         printf("Ingrese num: ");
