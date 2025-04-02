@@ -2,8 +2,13 @@
 
 void cuadradoNum(int num);
 
+
 int main() {
-    int num = 12;
+    int num;
+    
+    printf("Ingrese un numero: ");
+    scanf("%d", &num);
+
     cuadradoNum(num);
 
     return 0;
